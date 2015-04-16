@@ -756,6 +756,7 @@ message V1LayerParameter {
     MVN = 34;
     POOLING = 17;
     POWER = 26;
+    REGION_POOLING = 41;
     RELU = 18;
     SIGMOID = 19;
     SIGMOID_CROSS_ENTROPY_LOSS = 27;

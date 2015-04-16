@@ -502,6 +502,8 @@ V1LayerParameter_LayerType UpgradeV0LayerType(const string& type) {
     return V1LayerParameter_LayerType_MULTINOMIAL_LOGISTIC_LOSS;
   } else if (type == "pool") {
     return V1LayerParameter_LayerType_POOLING;
+  } else if (type == "region_pool") {
+    return V1LayerParameter_LayerType_REGION_POOLING;
   } else if (type == "relu") {
     return V1LayerParameter_LayerType_RELU;
   } else if (type == "sigmoid") {
@@ -895,6 +897,8 @@ const char* UpgradeV1LayerType(const V1LayerParameter_LayerType type) {
     return "MVN";
   case V1LayerParameter_LayerType_POOLING:
     return "Pooling";
+  case V1LayerParameter_LayerType_REGION_POOLING:
+    return "RegionPooling";
   case V1LayerParameter_LayerType_POWER:
     return "Power";
   case V1LayerParameter_LayerType_RELU:
